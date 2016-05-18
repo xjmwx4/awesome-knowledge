@@ -1,0 +1,83 @@
+1、背景样式
+<p style="background-color:rgb(217,48,5);color:rgb(255,255,255);">
+我的第一个CSS页面
+</p>
+与background相关的都是以“background-”开头的
+背景默认透明（transparent）
+rgba(255,255,255,0.5)  a的值在0-1之间
+图像：background-image：url(xxx.jpg)  url:路径 （/xxx/xxx.jpg）
+background-repeat：no-repeat
+background-position：center（图片位置）（right top 右上角）
+100px,100px  x100点，y100点
+background-attachment：fixed（背景图片固定不滚动）
+<p style="background：color，，，，，">
+2、文本样式
+缩进 <p style="text-indent:2em">  em：当前字体的倍数  也可以为百分比，整个页面的百分比 px:像素
+悬挂缩进： <p style="text-indent:-2em;padding:2em">
+行高：<p style="line-height:2">
+居中对齐/左对齐/右对齐/两端对齐 <p style="text-align:center/left/right/justify">
+英文空格：<p style="word-spacing：10px;">
+字符与字符间空格：<p style="letter-spacing:10px">
+全大写，小写，首字母大写<p style="text-transform:uppercase/lowercase/capitalize;">
+装饰text-decoration：underline（下划线） overline（上划线） line-through（中间）
+white-space：normal/pre(空格回车都承认，无卷绕)/pre-wrap（有卷绕）/no-wrap（无卷绕）/pre-line（合并空白且保留换行）
+文字书写方向：direction：rtl（默认为ltr）
+3、字体
+font-family:serif(多数英文字体)sans-serif monospace(等宽) cursive(手写字体)fantasy（无法归类的，星形等）
+英文字体多数浏览器一致，中文字体命名不一致 Times,TimesNR，serif（后为备选）
+font-style:italic（斜的）/obique
+font-variant：small-caps
+font-weight:bold(加粗) 900（粗细100-900之间的值，或者上限较小）
+font-size：0.4em/10px（建议用em）
+所有的p元素变粗：p {font-weight:bold}
+
+文本样式
+<p style="text-shadow:3px 5px 5px rgba(0,255,0,0.5)"> 分别为x,y,z方向距离
+<h1 style="text-shadow:0px -1px 0px #000000,0px 1px 3px #606060;color:#606060">
+outline-color:red;outline-style:solid/dotted/dashed/double/inset/outset;outline-width:thin/1
+4、列表和表格
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+可以在ul上变，也可以在li变
+style="list-style-type(类型):disc（实心圆）/circle（空心圆）/square(方的)"
+list-style-image：url()
+list-style-position（位置）:inside/outside（卷出来有区别）
+list-style:outside circle
+表格
+<table>
+<caption></caption>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+style="border:1px solid blue"
+<table style="border-collapse:collapse(两条框线合并成一条线)/seperate（默认分开的）">
+<caption></caption>
+style="border-collapse:collapse(两条框线合并成一条线)
+style="border:xx xx xx;width:1px;height:100px;vertical-align:top;text-align:right;padding:10px;"
+caption-side:bottom(表头位置)
+table-layout:automatic（全自动适应性变化）/fixed（列宽根据第一行定）
+5、框模型
+内边距：padding padding-top padding：10 15 20 25 top,right bottom left
+border
+margin:10px 50px 50px 10px
+6、定位
+<div></div>（中间可以放很多段）
+相对定位：position：relative；left:20px,bottom:-20px
+绝对定位：position:absolute
+7、样式选择器
+<style>
+th，td {border:1px solid blue} 对某一标签定义统一的具体样式
+*.important {color：red}  定义*为important，统一采用之后的样式
+p em {xxxx:xxx}（逗号和空格意义不一样。逗号并列，空格包含，p里面的em应用样式，p>em，紧挨着的那层）
+</style>
+a:visited {color:xxx}  <a href="xxxx">
+a:link
+a:hover
+a:active

@@ -1,0 +1,129 @@
+1、语法结构
+<!DOCTYPE html>
+<html>
+<head>
+	<title>我的页面</title>
+	<meta charset=utf-8>
+</head>
+<body>
+我的第一个HTML页面
+</body>
+</html>
+2、段落
+段落：<p>段落</p>
+断行：<br>  没有结束标志
+一级标题：<h1></h1>   数字代表级别 （标题单独成行）
+连续的层：<hgroup></hgroupe> 排列在一起（各级标题放一个层次）
+分隔符：<wbr>longwords</wbr>可以分开，有需要分开
+3、字体样式
+<b>b加粗</b>
+<i>i斜体</i>
+<small>samll缩小</small>
+<del>del删掉</del> 、<ins>ins添加</ins>
+<s>s过时的</s>
+<sup>sup上标</sup> <sub>sub下标</sub>
+<mark>mark高亮</mark>
+<em>em强调</em>
+<strong>strong着重</strong>
+<dfn>dfn定义</dfn>
+<code>code代码</code>
+<samp>samp例子代码</samp>
+<kbd>kbd用户输入</kbd>
+<var>var变量</var>
+<cite>cite引用</cite>
+4、结构/样式
+地址：<address>Rm 401 CKP West Wing <br>
+玉泉 Camps <br>
+浙江 U</address>
+
+<blockquote>缩进</blockquote>
+
+<blockquote><address>Rm 401 CKP West Wing <br>
+<blockquote>玉泉 Camps <br></blockquote>
+浙江 U</address></blockquote>
+
+<q>"小引用</q>
+
+预格式化：你输入什么就显示什么
+<pre>
+int main(){
+	printf("Hello\n");
+	return 0;
+}
+</pre>
+5、属性
+水平线（分割线）：<hr>
+<hr width=50% align=left size=1>
+<hr width=50 align=left>
+缩写：<abbr title="中华人民共和国">PRC</abbr>
+title:浮动注释，鼠标停在那里会显示额外信息
+<bdo dir=rtl>南方<bdi>庄园</bdi>风格</bdo>
+小于：&lt;
+大于：&gt;
+a&lt;2
+a&gt;2
+和&：&amp;
+空格：&nbsp;
+6、列表
+<ul>
+	<li>分点一</li>
+	<li>分点二</li>
+	<li>分点三</li>
+</ul>
+<ol>
+	<li>分点一</li>
+	<li>分点二
+	<ul>小分点1
+	    小分点2
+	</ul></li>
+	<li>分点三</li>
+</ol>
+<dl>
+	<dt>方糖(词条)</dt>
+	<dd>一种方型固状物，糖类</dd>
+</dl>
+7、图片
+<img src="d2.jpg" alt="撒比佳姐的个人主页" width=50%>
+<img src="http://passport.lehu.shu.edu.cn/WebCommon/images/logo.jpg">
+<iframe src="http://bbs.lehu.shu.edu.cn" height=500 width=50%></iframe>
+8、链接
+<a href="http://bbs.lehu.shu.edu.cn" target=_blank>乐乎论坛</a>
+<a href="my.html">当前目录下</a>
+<a href=#here>前往该页位置</a>
+<a href="my.html#here">当前目录下某位置</a>
+图片划分区域设置链接（如同地图效果）：
+<img src=d2.jpg width=100 height=100 usemap=#map>
+<map name=map>
+<area shape=rect coords=0,0,50,50 href=http://bbs.shu.edu.cn alt=乐乎论坛>
+<area shape=circle coords=75,75,25 href=http://www.shu.edu.cn alt=上大官网>
+</map>
+9、表格
+显示文字
+<table border="1">
+	<caption>城市列表</caption>
+	<thead>
+	<tr>
+	<th>城市1</th>
+	<th>城市2</th>
+	<th>城市3</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td>上海</td>
+	<td>杭州</td>
+	<td>北京</td>
+	</tr>
+	<tr>
+	<td>齐齐哈尔</td>
+	<td></td>
+	<td></td>
+	</tr>
+	<tr>
+	<td colspan=3>乌鲁木齐</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	</tfoot>
+</table>
+显示文字
