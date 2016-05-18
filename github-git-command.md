@@ -4,6 +4,24 @@
 使用 git 命令克隆模版： git clone git@github.com:xjmwx4/xjmwx4.github.io.git  (/之后 .gt之前为repo)
 
 复制文件到另一文件： cp -r your_source_document/* your_destination_document/ （记得在github根目录下 从master返回github目录指令： cd .. ）
+# 注意此操作为合并，而非替换
+
+修改-commit-push三步曲： 
+	git add .  （增加当前子目录下所有更改过的文件至当前master对应文件下）
+
+	git commit -m 'description'  （提交修改，并描述）
+
+	git push  （当前branch/master同步远程仓库）
+
+上述简化写法：
+	git commit -am 'description'  （将add和commit合并为一步）
+	git push
+
+
+删除某个文件： git rm file_name.synatx （某个具体文件要带文件后缀）
+
+
+
 
 
 # 提交当前分支代码到远程（注意查看当前分支）: git push
